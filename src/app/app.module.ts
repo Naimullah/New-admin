@@ -14,12 +14,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from 'src/material.module';
 import {HttpClientModule} from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
+import { LoginComponent } from './users_mmanagement/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     RegisterComponent,
+    LoginComponent,
     NavbarComponent,
     SidebarComponent,
     FormsComponent,
