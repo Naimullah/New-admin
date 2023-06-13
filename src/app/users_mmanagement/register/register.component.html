@@ -1,72 +1,85 @@
+
 <div class="container">
-    <div class="row">
-      <div class="col-md-6"> 
-        <div class="card">
-          <div class="text-center">
-            <h3>Register</h3>
-            <h5>Plz enter username and password</h5>
+  <div class="row">
+    <div class="col-md-6"> 
+      <div class="card">
+        <div class="text-center">
+          <h3>Register</h3>
+          <h5>Plz enter username and password</h5>
+        </div>
+        <form class="example-form" [formGroup]="registerform" (ngSubmit)="proceedregister()">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" formControlName="id" placeholder="User name">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-user"></span>
+              </div>
+            </div>
           </div>
-          <form class="example-form" [formGroup]="registerform" (ngSubmit)="proceedregister()">
-            <div class="input-group mb-3">
-                <input type="text" formControlName="id" hidden>
-              <input type="text" class="form-control" formControlName="name" placeholder="Full name">
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  <span class="fas fa-user"></span>
-                </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" formControlName="name" placeholder="Full name">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-user"></span>
               </div>
             </div>
-            <div class="input-group mb-3">
-              <input type="email" class="form-control"formControlName="email" placeholder="Email">
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  <span class="fas fa-envelope"></span>
-                </div>
+          </div>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control"formControlName="email" placeholder="Email">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-envelope"></span>
               </div>
             </div>
-            <div class="input-group mb-3">
-              <input type="password" class="form-control" formControlName="password" placeholder="Password">
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  <span class="fas fa-lock"></span>
-                </div>
+          </div>
+          <div class="input-group mb-3">
+            <input type="password" class="form-control" formControlName="password" placeholder="Password">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock"></span>
               </div>
             </div>
-            <div class="input-group mb-3" formControlName="gender">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-                    <label class="form-check-label" for="male">
-                      Male
-                    </label>
-                  </div>
-                  
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                    <label class="form-check-label" for="female">
-                      Female
-                    </label>
-                  </div>
-            </div>
-            <!-- <div class="row">
-              <div class="col-8">
-                <div class="icheck-primary">
-                  <input type="checkbox" id="agreeTerms" name="terms" value="agree">
-                  <label for="agreeTerms">
-                   I agree to the <a href="#">terms</a>
+          </div>
+          <div class="input-group mb-3" formControlName="gender">
+            <mat-radio-group formControlName="gender" aria-label="Select an option">
+              <mat-radio-button value="male">Male</mat-radio-button>
+              <mat-radio-button value="female">Female</mat-radio-button>
+            </mat-radio-group>
+              <!-- <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                  <label class="form-check-label" for="male">
+                    Male
                   </label>
                 </div>
-              </div> -->
-              <!-- /.col -->
-              <div class="mb-3">
-                <button type="submit" class="btn btn-primary btn-block">submit</button>
-                <a routerLink="/login" class="text-center">I already have a membership</a>
-
-              </div>
-              <!-- /.col -->
-          </form>
-    
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                  <label class="form-check-label" for="female">
+                    Female
+                  </label>
+                </div> -->
           </div>
-      </div>
-      </div>
-      </div>
-      
+          <!-- <div class="row">
+            <div class="col-8">
+              <div class="icheck-primary">
+                <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+                <label for="agreeTerms">
+                 I agree to the <a href="#">terms</a>
+                </label>
+              </div>
+            </div> -->
+            <!-- /.col -->
+            <div class="mb-3">
+              <button mat-raised-button color="primary">Submit</button>
+              <!-- <button type="submit" class="btn btn-primary btn-block">submit</button> -->
+              <a routerLink="/login" class="text-center">I already have a membership</a>
+
+            </div>
+            <!-- /.col -->
+        </form>
+  
+        </div>
+    </div>
+    </div>
+    </div>
+    
