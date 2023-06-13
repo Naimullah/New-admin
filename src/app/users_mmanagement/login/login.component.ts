@@ -18,8 +18,8 @@ export class LoginComponent {
   result: any;
 
   loginform = this.builder.group({
-    id: this.builder.control('', Validators.required),
-    password: this.builder.control('', Validators.required)
+    id: this.builder.control(''),
+    password: ['', Validators.required],
   });
 
   proceedlogin() {

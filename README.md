@@ -25,3 +25,41 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+<div class="card card-info">
+  <div class="card-header">
+    <h3 class="card-title">Horizontal Form</h3>
+  </div>
+  <!-- /.card-header -->
+  <!-- form start -->
+  <form class="example-form" [formGroup]="loginform" (ngSubmit)="proceedlogin()">
+  <div class="card-body">
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" formControlName="id"  placeholder="User Name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" formControlName="password"  placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-sm-2 col-sm-10">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+            <label class="form-check-label" for="exampleCheck2">Remember me</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer">
+      <button type="submit" class="btn btn-info">Sign in</button>
+      <a routerLink="/register">Back to Signup</a>
+    </div>
+    <!-- /.card-footer -->
+  </form>
+</div>
