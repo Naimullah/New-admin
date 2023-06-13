@@ -12,6 +12,7 @@ export class AuthService {
   apiurl='http://localhost:3000/user';
 
   RegisterUser(inputdata:any){
+    console.log('inputdata', inputdata);
     return this.http.post(this.apiurl,inputdata)
   }
   GetUserbyCode(id:any){
