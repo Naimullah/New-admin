@@ -3,11 +3,11 @@
   <!-- Preloader -->
  
   <!-- Navbar -->
- <navbar></navbar>
+ <navbar *ngIf="isMenuVisible"></navbar>
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" *ngIf="isMenuVisible">
     <!-- Brand Logo -->
     <a routerLink='/dashboard' class="brand-link">
       <img src="assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -15,7 +15,7 @@
     </a>
 
     <!-- Sidebar -->
-   <sidebar></sidebar>
+   <sidebar *ngIf="isMenuVisible"></sidebar>
     <!-- /.sidebar -->
   </aside>
 
@@ -30,7 +30,7 @@
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  <footer class="main-footer">
+  <footer class="main-footer" *ngIf="isMenuVisible">
     <strong>Copyright &copy; 2023 <a href="https://adminlte.io">Admin</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">

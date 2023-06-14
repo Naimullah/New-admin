@@ -15,6 +15,8 @@ import {MaterialModule} from 'src/material.module';
 import {HttpClientModule} from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { LoginComponent } from './users_mmanagement/login/login.component';
+import { UserComponent } from './users_mmanagement/user/user.component';
+import { UpdatepopupComponent } from './users_mmanagement/updatepopup/updatepopup.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { LoginComponent } from './users_mmanagement/login/login.component';
     DashboardComponent,
     RegisterComponent,
     LoginComponent,
+    UserComponent,
+    UpdatepopupComponent,
     NavbarComponent,
     SidebarComponent,
     FormsComponent,

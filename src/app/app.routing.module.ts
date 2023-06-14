@@ -5,12 +5,15 @@ import { FormsComponent } from "./components/forms/forms.component";
 import { GenerateComponent } from "./components/forms/general/generate.component";
 import { LoginComponent } from "./users_mmanagement/login/login.component";
 import { RegisterComponent } from "./users_mmanagement/register/register.component";
+import { AuthGuard } from "./users_mmanagement/guard/auth.guard";
+import { UserComponent } from "./users_mmanagement/user/user.component";
 const routes: Routes=[
-{path: '', component:DashboardComponent},
-{path: 'dashboard', component:DashboardComponent},
+{path: '', component:DashboardComponent,canActivate:[AuthGuard]},
+{path: 'dashboard', component:DashboardComponent,canActivate:[AuthGuard]},
 {path: 'generate', component:GenerateComponent},
 {path: 'login', component:LoginComponent},
 {path: 'register', component:RegisterComponent},
+{path: 'user', component:UserComponent,canActivate:[AuthGuard]},
 {path: 'forms', component:FormsComponent,children: [
     {path: '', component:GenerateComponent},
     {path: 'generate', component:GenerateComponent}

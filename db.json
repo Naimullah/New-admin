@@ -2,8 +2,8 @@
   "user": [
     {
       "id": "admin",
-      "name": "test",
-      "password": "admin@123",
+      "name": "NT Infotech",
+      "password": "Test$1234",
       "email": "test@gmail.com",
       "gender": "male",
       "role": "admin",
@@ -13,155 +13,126 @@
       }
     },
     {
-      "id": "khan",
-      "name": "naim khan",
-      "password": "khan@2342141",
-      "email": "khan@gmail.com",
+      "id": "testuser",
+      "name": "Test User",
+      "password": "Test@1234",
+      "email": "test@in.com",
       "gender": "male",
-      "role": "",
-      "isactive": false
+      "role": "user",
+      "isactive": true,
+      "address": {
+        "area": "chennai"
+      }
     },
     {
-      "id": "dsgsdg",
-      "name": "sfsg",
-      "password": "khan@#2324",
-      "email": "khan@gmail.com",
+      "id": "Jhon1",
+      "name": "NT Infotech",
+      "password": "Test@1233",
+      "email": "te@in.com",
       "gender": "male",
-      "role": "",
-      "isactive": false
+      "role": "tech",
+      "isactive": true,
+      "address": {
+        "area": "chennai"
+      }
     },
     {
-      "id": "svsd",
-      "name": "dssf",
-      "password": "khan#@$43242",
-      "email": "admin@gmail.com",
+      "id": "ntuser",
+      "name": "ramesh",
+      "password": "Test@1234",
+      "email": "te@in.com",
       "gender": "male",
-      "role": "",
-      "isactive": false
+      "role": "tech",
+      "isactive": true,
+      "address": {
+        "area": "banglore"
+      }
     },
     {
-      "id": "wali",
-      "password": "khan@123214314",
-      "email": "khan@gmail.com",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "mnkj",
-      "password": "fwefw$342",
-      "email": "khan@mastopi",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "khanzada",
-      "name": "",
-      "password": "",
-      "email": "",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "104_fhn",
-      "name": "",
-      "password": "",
-      "email": "",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "C2WQMIi",
-      "name": "",
-      "password": "",
-      "email": "",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "BvHkAjb",
-      "name": "",
-      "password": "",
-      "email": "",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "faihm",
-      "name": "khan hazar",
-      "password": "fahim@122134214",
-      "email": "fahim@gmail.com",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "welcome ",
-      "name": "khan welcome ",
-      "password": "welcome@#423",
-      "email": "welcome@gmail.com",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "ewee",
-      "name": "eew",
-      "password": "ewew",
-      "email": "wee",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "s",
-      "name": "s",
-      "password": "ss",
-      "email": "s",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "c",
-      "name": "c",
-      "password": "c",
-      "email": "c",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "dsd",
-      "name": "sdd",
-      "password": "dsdsds",
-      "email": "sdsdsdsds",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "1",
-      "name": "wali",
-      "password": "Akjan@#$4324",
-      "email": "khan@123",
-      "gender": "male",
-      "role": "",
-      "isactive": false
-    },
-    {
-      "id": "ibad",
-      "name": "khan",
-      "password": "khan@122324",
+      "id": "new ",
+      "name": "user",
+      "password": "khan@123",
       "email": "khan@gmail.com",
       "geneder": "male",
       "role": "",
       "isactive": false
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "tech",
+      "name": "Technician"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "rakhesh",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 2,
+      "name": "rahul",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 3,
+      "name": "ramesh",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 4,
+      "name": "rahim",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 5,
+      "name": "robert",
+      "Creditlimit": 1000
     }
   ]
 }
