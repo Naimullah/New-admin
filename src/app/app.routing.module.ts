@@ -7,7 +7,9 @@ import { LoginComponent } from "./users_mmanagement/login/login.component";
 import { RegisterComponent } from "./users_mmanagement/register/register.component";
 import { AuthGuard } from "./users_mmanagement/guard/auth.guard";
 import { UserComponent } from "./users_mmanagement/user/user.component";
+import { CustomerComponent } from "./customer/customer.component";
 const routes: Routes=[
+// {path: '', redirectTo:'dashborad',pathMatch:'full',canActivate:[AuthGuard]},
 {path: '', component:DashboardComponent,canActivate:[AuthGuard]},
 {path: 'dashboard', component:DashboardComponent,canActivate:[AuthGuard]},
 { path: 'login', component: LoginComponent },
@@ -15,6 +17,7 @@ const routes: Routes=[
 {path: 'generate', component:GenerateComponent},
 // {path: 'login', component:LoginComponent},
 {path: 'register', component:RegisterComponent},
+{path: 'customer', component:CustomerComponent},
 {path: 'user', component:UserComponent,canActivate:[AuthGuard]},
 {path: 'forms', component:FormsComponent,children: [
     {path: '', component:GenerateComponent},
