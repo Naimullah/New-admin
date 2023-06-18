@@ -1,4 +1,4 @@
-<mat-card>
+ <!-- <mat-card>
   <mat-card-header>
       <h2>User Login</h2>
   </mat-card-header>
@@ -21,4 +21,37 @@
   </mat-card-content>
 </mat-card>
 
-
+ 
+ -->
+ <div class="row" style="margin-left: 200px; margin-top: 100px;">
+  <div class="col-md-6">
+      <div class="card card-primary">
+          <div class="card-header">
+              <h3 class="card-title">Login to System</h3>
+          </div>
+          <form role="form" [formGroup]="loginform" (ngSubmit)="proceedlogin()">
+              <div class="card-body">
+                  <div class="form-group">
+                      <label for="exampleInputEmail1">Username:</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" formControlName="id" placeholder="Enter Name">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" placeholder="Password">
+                  </div>
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+              </div>
+              <div class="card-footer">
+                  <button mat-raised-button color="primary">Login</button>
+                  <a routerLink="/register" mat-raised-button color="accent">New User?</a>
+                  <!-- <button type="submit" (click)="login()" class="btn btn-primary">Submit</button> -->
+              </div>
+          </form>
+      </div>
+  </div>
+  <div class="col-md-6">
+  </div>
+</div>

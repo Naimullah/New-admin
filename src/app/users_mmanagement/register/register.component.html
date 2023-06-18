@@ -1,16 +1,22 @@
 
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-md-6"> 
       <div class="card">
         <div class="text-center">
           <h3>Register</h3>
           <h5>Plz enter username and password</h5>
-        </div>
+        </div> -->
  
+        <div class="row" style="margin-left: 200px; margin-top: 100px;">
+          <div class="col-md-6">
+              <div class="card card-primary">
+                  <div class="card-header">
+                      <h3 class="card-title">registeration form</h3>
+                  </div>
           <form class="example-form" [formGroup]="registerform" (ngSubmit)="proceedregister()">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" formControlName="id" placeholder="Name of admin" >
+                <input type="text" class="form-control" formControlName="id" placeholder="Name of user" >
               <div class="input-group-append">
                 <div class="input-group-text">
                   <span class="fas fa-user"></span>
@@ -78,11 +84,15 @@
               </div>
               <!-- /.col -->
           </form>
-  
+        </div>
+      </div>
+      <div class="col-md-6">
+      </div>
+    </div>
 
   
-        </div>
+        <!-- </div>
     </div>
     </div>
     </div>
-    
+     -->

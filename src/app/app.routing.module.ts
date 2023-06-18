@@ -10,8 +10,10 @@ import { UserComponent } from "./users_mmanagement/user/user.component";
 const routes: Routes=[
 {path: '', component:DashboardComponent,canActivate:[AuthGuard]},
 {path: 'dashboard', component:DashboardComponent,canActivate:[AuthGuard]},
+{ path: 'login', component: LoginComponent },
+//   { path: '**', redirectTo: '/login', pathMatch: 'full' },
 {path: 'generate', component:GenerateComponent},
-{path: 'login', component:LoginComponent},
+// {path: 'login', component:LoginComponent},
 {path: 'register', component:RegisterComponent},
 {path: 'user', component:UserComponent,canActivate:[AuthGuard]},
 {path: 'forms', component:FormsComponent,children: [
