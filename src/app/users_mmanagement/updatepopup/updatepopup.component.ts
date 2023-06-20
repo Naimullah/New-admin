@@ -1,8 +1,8 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms'
 import { ToastrService } from 'ngx-toastr';
-import { AuthService } from '../service/auth.service';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
   selector: 'app-updatepopup',
