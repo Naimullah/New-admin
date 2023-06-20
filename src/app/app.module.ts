@@ -8,8 +8,6 @@ import { AppRoutingModule } from './app.routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar.component';
 import { SidebarComponent } from './sidebar.component';
-import { FormsComponent } from './components/forms/forms.component';
-import { GenerateComponent } from './components/forms/general/generate.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from 'src/material.module';
 import {HttpClientModule} from '@angular/common/http';
@@ -17,6 +15,9 @@ import { ToastrModule } from 'ngx-toastr';
 import { LoginComponent } from './users_mmanagement/login/login.component';
 import { UserComponent } from './users_mmanagement/user/user.component';
 import { UpdatepopupComponent } from './users_mmanagement/updatepopup/updatepopup.component';
+import { MatCardModule } from '@angular/material/card';
+import { CustomerListComponent } from './customer/customer-list/customer-list.component';
+import { CreateEditModelComponent } from './customer/create-edit-model/create-edit-model.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +26,11 @@ import { UpdatepopupComponent } from './users_mmanagement/updatepopup/updatepopu
     RegisterComponent,
     LoginComponent,
     UserComponent,
+    CustomerListComponent,
+    CreateEditModelComponent,
     UpdatepopupComponent,
     NavbarComponent,
     SidebarComponent,
-    FormsComponent,
-    GenerateComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +41,7 @@ import { UpdatepopupComponent } from './users_mmanagement/updatepopup/updatepopu
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
+    MatCardModule,
     ToastrModule.forRoot()
   ],
   providers: [],
