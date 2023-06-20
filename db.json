@@ -111,33 +111,6 @@
   "customer": [
     {
       "id": 1,
-      "name": "rakhesh",
-      "Creditlimit": 1000
-    },
-    {
-      "id": 2,
-      "name": "rahul",
-      "Creditlimit": 1000
-    },
-    {
-      "id": 3,
-      "name": "ramesh",
-      "Creditlimit": 1000
-    },
-    {
-      "id": 4,
-      "name": "rahim",
-      "Creditlimit": 1000
-    },
-    {
-      "id": 5,
-      "name": "robert",
-      "Creditlimit": 1000
-    }
-  ],
-  "customer": [
-    {
-      "id": 1,
       "name": "Janesh",
       "phone": "8989787867",
       "email": "janesh@in.com",
@@ -351,6 +324,13 @@
       "phone": "0345436436",
       "status": false,
       "id": 31
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "phone": "6363",
+      "status": true,
+      "id": 32
     }
   ],
   "associate": [
@@ -408,6 +388,22 @@
     {
       "code": "England",
       "name": "England"
+    }
+  ],
+  "students": [
+    {
+      "id": 2,
+      "name": "Saim Ahmed",
+      "email": "saim@gmail.com",
+      "phone": 46546546565,
+      "address": "DHK"
+    },
+    {
+      "id": 3,
+      "name": "test",
+      "email": "test@gmail.com",
+      "phone": 7867868,
+      "address": "kabul "
     }
   ]
 }

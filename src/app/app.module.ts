@@ -18,6 +18,7 @@ import { UpdatepopupComponent } from './users_mmanagement/updatepopup/updatepopu
 import { MatCardModule } from '@angular/material/card';
 import { CustomerListComponent } from './customer/customer-list/customer-list.component';
 import { CreateEditModelComponent } from './customer/create-edit-model/create-edit-model.component';
+import { UsersComponent } from './component/users/users.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { CreateEditModelComponent } from './customer/create-edit-model/create-ed
     RegisterComponent,
     LoginComponent,
     UserComponent,
+    UsersComponent,
     CustomerListComponent,
     CreateEditModelComponent,
     UpdatepopupComponent,
