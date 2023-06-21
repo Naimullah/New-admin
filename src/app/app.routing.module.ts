@@ -6,7 +6,9 @@ import { RegisterComponent } from "./users_mmanagement/register/register.compone
 import { AuthGuard } from "./users_mmanagement/guard/auth.guard";
 import { UserComponent } from "./users_mmanagement/user/user.component";
 import { CustomerListComponent } from "./customer/customer-list/customer-list.component";
-import { UsersComponent } from "./component/users/users.component";
+import { HomeComponent } from "./Pages/home/home.component";
+import { AboutComponent } from "./Pages/about/about.component";
+import { ContactComponent } from "./Pages/contact/contact.component";
 const routes: Routes=[
 // {path: '', redirectTo:'dashborad',pathMatch:'full',canActivate:[AuthGuard]},
 { path: 'login', component: LoginComponent },
@@ -15,8 +17,10 @@ const routes: Routes=[
 //   { path: '**', redirectTo: '/login', pathMatch: 'full' },
 // {path: 'login', component:LoginComponent},
 {path: 'register', component:RegisterComponent},
+{path: 'home', component:HomeComponent},
+{path: 'about', component:AboutComponent},
+{path: 'contact', component:ContactComponent},
 {path: 'customer', component:CustomerListComponent},
-{path: 'users', component:UsersComponent},
 {path: 'user', component:UserComponent,canActivate:[AuthGuard]},
 
 ];
